@@ -1,24 +1,19 @@
-# README
+# 设置数据库
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+`database.yml` 设置数据库参数
 
-Things you may want to cover:
+# 创建数据库
+```
+bin/rails db:create
+```
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# 自动重启（Windows）
++ 打开config/environments/development.rb
++ 文件末尾 config.file_watcher 解开注释
++ 打开Gemfile，添加
+```
+group :development do
+  gem 'listen'
+  gem 'wdm', '>=0.1.0', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+end
+```
