@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get 'me', to: 'users#me'
   resources :users
   resources :sessions, only: [:create]
+  resources :password_resets, only: [:create]
 end
