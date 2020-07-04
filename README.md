@@ -17,3 +17,12 @@ group :development do
   gem 'wdm', '>=0.1.0', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 end
 ```
+# 启动项目
+```
+bin/rails s
+```
+
+# 按照依赖
+```
+bundle install
+```
