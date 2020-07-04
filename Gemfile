@@ -31,6 +31,8 @@ group :development, :test do
 end
 
 group :development do
+  gem 'listen'
+  gem 'wdm', '>=0.1.0', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
